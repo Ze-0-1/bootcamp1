@@ -1,0 +1,6 @@
+idade = int(input('Digite a idade: '))
+
+if idade >= 18 and idade <= 65:
+    print('idade dentro da faixa')
+else:
+    print('idade fora da faixa')
