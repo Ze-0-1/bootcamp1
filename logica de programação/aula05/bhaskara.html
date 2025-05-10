@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhaskara</title>
+</head>
+<body>
+<h1>Calculadora de bhaskara</h1>
+<hr>
+a: <input type="number" id="a">
+b: <input type="number" id="b">
+c: <input type="number" id="c">
+<button onclick="processar()">calcular</button>
+
+</body>
+</html>
+<script>
+    function processar() {
+        a = parseInt(document.getElementById("a").value);
+        b = parseInt(document.getElementById("b").value);
+        c = parseInt(document.getElementById("c").value);
+
+        delta = b ** 2 - 4 * a * c;
+
+        if (delta < 0) {
+            alert("Raiz real não existente");
+        }
+        if (delta === 0) x1 = (-b) / (2 * a);
+        if (delta > 0) ;
+        x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        {
+            alert(`x1 =${x1} e x2 =${x2}`)
+        }
+
+    }
+</script>
